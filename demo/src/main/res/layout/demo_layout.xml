@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:text="1. via xml-layout"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <org.heisenberglab.badge.BadgeView
+      app:show_badge="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <TextView
+        android:padding="4dp"
+        android:text="Hello, World!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </org.heisenberglab.badge.BadgeView>
+
+  <TextView
+      android:text="2. via java code plus assign a location"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <FrameLayout
+      android:id="@+id/container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <TextView
+      android:text="3. hide or show with text"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <org.heisenberglab.badge.BadgeView
+      app:show_text_badge="true"
+      app:badge_text="2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@android:drawable/ic_dialog_alert"
+        android:padding="4dp"
+        android:text="Hello,\n World!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </org.heisenberglab.badge.BadgeView>
+</LinearLayout>
