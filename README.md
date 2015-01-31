@@ -2,22 +2,23 @@ Badge View
 ===
 Badge view is a view group providing to show a badge(or with a text) at four-corner(top-left, top-right, etc.)
 
-Currently, it only support one child(children) just like the framework' s ``android.widget.ScrollView``.
+Currently, it only supports one child(children) just like the framework' s ``android.widget.ScrollView``.
 
-**This is what a learn how to write your customized view group and use it in your practice project. So, if you have any trouble or suggestion, feel free to drop me a line.**
+**This is what I learn how to write your customized view group and use it in your practice project. So, if you have any trouble or suggestion, feel free to drop me a line.**
 
 ![art](art/screen-shot.png)
 
 ===
 
 ### Usage
-1. via xml-layout
+1. via xml-layout(don' t forget to add **app** as xmlns)
 
 ```xml
 <org.heisenberglab.badge.BadgeView
-      app:show_badge="true"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:show_badge="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <TextView
         android:padding="4dp"
@@ -79,11 +80,11 @@ To see the default value, take a look at the source code, it' s really a simple 
 ```
 
 ### Notice
-1. it only supports one child(children), like it said before
+1. it only supports one child(children), like it said before.
 
-2. the lib hasn' t publish to maven central, so you must clone the lib add add it to your gradle-styled ``build.xml`` as a dependency.
+2. the lib hasn' t published to maven central, so you must clone the lib add add it to your gradle-styled ``build.xml`` as a dependency now.
 
-3. the badge view simple uses the child(ren)' s width and height as its dimension. So you must specify it either use xml-layout or java code. This inconvenient would be fixed in the next version:-)
+3. the badge view simply uses the child(ren)' s width and height as its dimension. So you must specify it either use xml-layout or java code. This inconvenience would be fixed in the next version:-)
 
 4. required android 2.2+ (API level 8). Maybe it could support start at Android 1.0, but it deserves nothing...
 
